@@ -1,0 +1,94 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+:root{
+      --color-primary: #22254b;
+      --color-secondary : #373b69;
+      --color-white: #fff;
+}
+body{
+      background-color: var(--color-secondary);
+}
+a:link,
+a:visited{
+      text-decoration: none;
+}
+.logo{
+      font-size: 36px;
+      color: var(--color-white);
+}
+header{
+      padding: 20px;
+      background-color: var(--color-primary);
+      line-height: 1;
+}
+.imdbcard figure{
+      height: 350px;
+}
+.cardimg {
+      height: 100%;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      
+}
+
+.card.imdbcard{
+      overflow: hidden;
+}
+
+.imdbcard figcaption{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-primary);
+      line-height: 1;
+      padding: 20px;
+      color: var(--color-white);
+      font-size: 18px;
+}
+.rating{
+      display: inline-block;
+      color: orange;
+      font-size: 24px;
+}
+.overview{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-white);
+      padding: 20px;
+      max-height: 75%;
+      overflow-y: auto;
+      transition: all .4s ease-in-out;
+      transform: translateY(110%);
+}
+.card.imdbcard:hover .overview{
+      transform: translateY(0);
+}
+.overview h4{
+      text-align: center;
+      color: orangered;
+}
+.overview p{
+      color: navy;
+      font-size:20px;
+}
+
+.ratinggreen{
+      color: green;
+}
+
+.ratingyellow{
+      color: yellow;
+}
+.ratingorange{
+      color: orange;
+}
+.ratingred{
+      color: red;
+}
